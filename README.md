@@ -1,7 +1,7 @@
 # combined-reduction
 
 Like Redux's [`combineReducers`](http://redux.js.org/docs/api/combineReducers.html), but more better!
-
+Clone of the convoyinc library, with initial state fixed for the top-level reducer.
 
 ## Nested Reducers
 
