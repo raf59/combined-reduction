@@ -14,7 +14,7 @@ function combinedReduction() {
     }
     var dispatchPairs = _.reduce(reducers, function (m, r) { return m.concat(_findReducers(r)); }, []);
     return function (state, action) {
-        if (state === void 0) { state = {}; }
+        //if (state === void 0) { state = {}; }
         for (var _i = 0, dispatchPairs_1 = dispatchPairs; _i < dispatchPairs_1.length; _i++) {
             var _a = dispatchPairs_1[_i], path = _a[0], reducer = _a[1];
             var currentState = path.length === 0 ? state : _.get(state, path);
